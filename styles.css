@@ -1,0 +1,177 @@
+body{
+    background: #e6e6e6;
+    margin: 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img{
+    width: 100%;
+}
+
+#resume{
+    font-size: xx-large;
+}
+
+.content{
+    display: flex;
+}
+
+
+.col__aboutMe, .col__disc{
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    margin: 5px;
+    height: fit-content;
+}
+
+
+/* START COURSES */
+table{
+    width: 100%;
+}
+
+table, tr, td{
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+thead{
+    cursor: default;
+    width: 80%;
+}
+tbody{
+    width: 20%;
+    cursor: pointer;
+}
+
+td{
+    padding: 10px;
+}
+
+#infoSubject{
+    cursor: default;
+}
+
+.desc__subject{
+    display: none;
+    cursor: default;
+}
+
+.nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-count{
+}
+
+.pagination{
+    margin: 16px 0;
+}
+
+.pagination button{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background: white;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+.pagination button:hover{
+    background-color: darkgray;
+}
+
+.pagination button.active{
+    background-color: darkgray;
+}
+/* END COURSES */
+
+
+input[type='submit']{
+    padding: 15px 30px;
+    color: white;
+    background: blue;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+input[type="text"]{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    height: 40px;
+}
+
+.textArea{
+    margin-top: 20px;
+}
+
+
+.copyright{
+    text-align: center;
+}
+
+footer{
+    padding: 15px;
+    background: black;
+    color: grey;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+    .container {
+        padding: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .col__aboutMe, .col__disc{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        padding: 0px;
+    }
+
+    .col__aboutMe{
+        flex: 2;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .col__disc{
+        flex: 5;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
